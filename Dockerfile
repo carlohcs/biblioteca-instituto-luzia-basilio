@@ -9,7 +9,7 @@ ENTRYPOINT echo "listen_addresses = '*'" >> /etc/postgresql/9.6/main/postgresql.
 && 	/etc/init.d/postgresql start \
 &&	wget https://github.com/$GITHUB_USER/biblioteca-instituto-luzia-basilio/archive/$BRANCH_NAME.zip \
 &&	unzip $BRANCH_NAME.zip -d /tmp && rm $BRANCH_NAME.zip \
-&&	cd /tmp/Biblivre-5-$BRANCH_NAME/lib/ \
+&&	cd /tmp/biblioteca-instituto-luzia-basilio-$BRANCH_NAME/lib/ \
 &&	sh maven_deps.sh \
 &&	cd .. \
 &&	mvn sass:update-stylesheets package -Ddebug=true \
