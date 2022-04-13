@@ -1,0 +1,12 @@
+{
+  "name": "biblioteca-instituto-luzia-basilio",
+  "version": "1.0.0",
+  "description": "Biblioteca do Instituto Luzia Basilio",
+  "scripts": {
+    "build": "docker build -t instituto/biblioteca:latest .",
+    "start": "docker run -p 8080:8080 instituto/biblioteca:latest",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos Henrique Carvalho de Santana",
+  "license": "ISC"
+}

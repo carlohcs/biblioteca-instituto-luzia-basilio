@@ -1,6 +1,6 @@
-# Biblivre-5
+# Biblioteca Instituto Luzia Basilio
 
-Biblioteca Livre Internacional 5.0.5
+Este projeto tem como finalidade possibilitar que a biblioteca online do Instituto Luzia Basilio seja acessível a todos.
 
 ## Build e deploy
 
@@ -9,7 +9,7 @@ Existem duas formas de se compilar e implantar o Biblivre 5: usando uma imagem d
 ### Docker
 
 #### Como usar
-Execute `docker run -p 8080:8080 cleydyr/biblivre5-dev`
+Execute `docker run -p 8080:8080 instituto/biblioteca:latest`
 Depois que todo o processo de implantação terminar (cerca de 5 minutos, mas depende da capacidade de processamento da máquina e da largura de banda de conexão à internet disponível), você poderá acessar o Biblivre 5 em `localhost:8080/Biblivre4` (note que o 4 no fim da URL ainda persiste, mesmo sendo o Biblivre 5 que está rodando). Além disso o servidor de aplicação vai rodar em modo debug e por isso você pode fazer o debug remoto da aplicação usando a porta 8000.
 
 #### Variáveis de ambiente
@@ -17,7 +17,7 @@ Por padrão, a imagem vai baixar o código do repositório do usuário cleydyr n
 `docker run -p 8080:8080 -p 8000:8000 -e "BRANCH_NAME=meu-branch" -e "GITHUB_USER=fulano" cleydyr/biblivre5-dev`
 
 #### WeDeploy
-[![Deploy](https://cdn.wedeploy.com/images/deploy.svg)](https://console.wedeploy.com/deploy?repo=https://github.com/cleydyr/Biblivre-5/tree/5.x)
+[![Deploy](https://cdn.wedeploy.com/images/deploy.svg)](https://console.wedeploy.com/deploy?repo=https://github.com/carlohcs/Biblivre-5/tree/5.x)
 
 ### Configuração manual
 
